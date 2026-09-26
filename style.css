@@ -1,13 +1,14 @@
 :root {
-  --cream: #FFF4E0;
-  --ink: #1D1B2E;
-  --ink-soft: rgba(29, 27, 46, 0.65);
-  --paper: #FFFFFF;
-  --sun: #FFC93C;
-  --tomato: #FF5A4E;
-  --sky: #4DA8FF;
-  --mint: #3DD68C;
-  --pink: #FF7AC6;
+  --cream: #FAF2D6;
+  --ink: #5C3830;
+  --ink-soft: rgba(92, 56, 48, 0.72);
+  --paper: #FFFBEF;
+  --sun: #E3B54A;
+  --tomato: #CC754F;
+  --sky: #6185A8;
+  --mint: #739E85;
+  --pink: #E3B54A;
+  --leather: #784C40;
 }
 * { box-sizing: border-box; }
 body {
@@ -58,7 +59,7 @@ ol.steps li:nth-child(3)::before { background: var(--sky); }
 ol.steps li:nth-child(4)::before { background: var(--mint); }
 .faq p { margin: 0 0 18px; }
 .crumbs { margin-bottom: 18px; }
-footer { margin-top: 48px; padding-top: 18px; border-top: 2px dashed rgba(29, 27, 46, 0.25); color: var(--ink-soft); font-size: 15px; }
+footer { margin-top: 48px; padding-top: 18px; border-top: 2px dashed rgba(92, 56, 48, 0.3); color: var(--ink-soft); font-size: 15px; }
 footer p { margin: 4px 0; }
 @media (max-width: 480px) {
   h1 { font-size: 30px; }
@@ -68,3 +69,7 @@ h3 { font-size: 19px; font-weight: 900; margin: 26px 0 8px; }
 .jump { margin-top: 16px; font-weight: 700; color: var(--ink-soft); }
 #privacy { margin-top: 56px; padding-top: 8px; border-top: 3px solid var(--ink); }
 html { scroll-behavior: smooth; }
+
+/* Rewind 96: icon-matched touches */
+ol.steps li:nth-child(2)::before, ol.steps li:nth-child(3)::before, ol.steps li:nth-child(4)::before { color: var(--paper); }
+.pixel { font-family: ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 2px; }
